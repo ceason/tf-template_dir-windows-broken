@@ -1,6 +1,6 @@
 
 
-resource "template_dir" "stuid-template-dir" {
-  destination_dir = "${dirname("${path.cwd}/generated/")}"
-  source_dir      = "${dirname("${path.module}/dir/")}"
+resource template_dir some_resource_name {
+  destination_dir = "./generated"
+  source_dir      = "./dir"
 }
